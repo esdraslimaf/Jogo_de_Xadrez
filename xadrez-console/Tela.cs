@@ -1,8 +1,10 @@
 ﻿using System;
 using tabuleiro;
+using xadrez;
+
 namespace tabuleiro
 {
-    class Tela
+    public class Tela
     {
     public static void imprimirTabuleiro(Tabuleiro tab)
         {
@@ -26,11 +28,21 @@ namespace tabuleiro
 
         }
 
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1]+"");
+            return new PosicaoXadrez(coluna, linha);
+        }
+
+
+
         public static void imprimirPeca(Peca peca)
         {
             if(peca.cor== Cor.Branca)
             {
-                Console.WriteLine(peca);
+                Console.Write(peca);
             }
             else
             {
