@@ -1,4 +1,10 @@
 ﻿//NET 6.0
 using tabuleiro;
+using xadrez; 
 
-Tabuleiro t = new Tabuleiro(8, 8);
+
+Tabuleiro tab = new Tabuleiro(8, 8);
+
+
+
+Tela.imprimirTabuleiro(tab);
