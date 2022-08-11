@@ -1,7 +1,7 @@
 ﻿
 namespace tabuleiro
 {
-   public class Tabuleiro
+    class Tabuleiro
     {
         public int linhas { get; set; }
         public int colunas { get; set; }
