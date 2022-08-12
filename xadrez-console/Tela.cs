@@ -16,7 +16,10 @@ namespace tabuleiro
             Console.WriteLine();
             Console.WriteLine($"Turno: {partida.turno}");
             Console.WriteLine($"Jogador(a) da vez: {partida.jogadorAtual}");
-            
+            if (partida.xeque)
+            {
+                Console.WriteLine("Xeque!");
+            }
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
