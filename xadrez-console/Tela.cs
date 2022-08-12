@@ -15,10 +15,16 @@ namespace tabuleiro
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine($"Turno: {partida.turno}");
+            if (!partida.terminada) { 
             Console.WriteLine($"Jogador(a) da vez: {partida.jogadorAtual}");
             if (partida.xeque)
             {
                 Console.WriteLine("Xeque!");
+            }
+            }
+            else { 
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: "+partida.jogadorAtual);
             }
         }
 
